@@ -1,0 +1,51 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@300&display=swap');
+@font-face {
+    font-family: 'Afterglow';
+    src: url('../fonts/Afterglow-Regular.ttf');
+} */
+
+.container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: -30px;
+ 
+}
+.title{
+    color:#ffc800;
+    display: flex;
+    font-family: 'Afterglow';
+    padding: 80px;
+    font-size: 32px;
+}
+.iframe{
+    width: 700px;
+    height: 500px;
+}
+.enviar button{
+    width: 200px;
+    height: 30px;
+    font-family: "Roboto";
+    font-size: 1rem;
+    color: white;
+    border: solid 1px #FFC800;
+    background-color: #FFC800;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+button:hover{
+    background-color: #aa8500;
+    cursor: pointer;
+
+} 
+.enviar{
+    text-align: center;
+}
+

@@ -1,0 +1,18 @@
+.carousel {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+.carouselButton {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    background-color: #ffc800;
+}  
+
+.carouselButton:hover {
+    background-color: #ffff;
+    cursor: pointer;
+} 
+

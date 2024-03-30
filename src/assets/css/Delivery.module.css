@@ -1,0 +1,134 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@300&display=swap');
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+main{ 
+    background: #040404;
+    color: white;
+}
+.productContainerD{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+}
+.productContainerD .item{
+    width: 330px;
+    height: 100%;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.productContainerD .item img{
+    width: auto;
+    height: 220px;
+    transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+.productContainerD .item:hover{
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.11);
+}
+.productContainerD .item img:hover{
+    transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+
+.productContainerD h2{
+    font-size: 24px;
+    text-align:center;
+    width: 100%;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    
+}
+
+.productContainerD h3{
+    color: #FFC800;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.price{
+    color: #ffc800;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-top: 4px;
+}
+.productContainerD button{
+    background-color:#FFC800;
+    opacity:0.8;
+    color: black;
+    border-radius: 0.4em;
+    width: 200px;
+    font-weight: 800;
+    font-size:medium;
+}
+
+.description{
+    color: white;
+}
+
+
+.productContainerM{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.productContainerM .item{
+    width: 330px;
+    height: 100%;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+}
+.productContainerM .item img{
+    width: auto;
+    height: 220px;
+    transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+.productContainerM .item:hover{
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.11);
+}
+.productContainerM .item img:hover{
+    transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+
+.productContainerM h2{
+    font-size: 24px;
+    text-align:center;
+    width: 100%;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    
+}
+
+.productContainerM h3{
+    color: #FFC800;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-bottom: 25px;
+}

@@ -1,0 +1,38 @@
+/* h2{
+    font-size: 30px;
+    text-align: center;
+    color: #FFC900;
+    font-family: 'Afterglow';
+} */
+
+.productContainerM{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.productContainerM .item{
+    width: 330px;
+    height: 100%;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+}
+.productContainerM .item img{
+    width: auto;
+    height: 220px;
+    transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+.productContainerM .item:hover{
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.11);
+}
+.productContainerM .item img:hover{
+    transform: scale(1.2, 1.2);
+	z-index: 9;
+}
