@@ -1,5 +1,4 @@
 import React from 'react'
-import  styles from '../../assets/css/Footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
@@ -8,39 +7,42 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return (
     <footer>
-        <section className={styles.containerFooter}>
-            <article className={styles.containerContacto}>
-                <img className={styles.logoFooter} src='/src/assets/images/logo-04-letra.png' alt=''/>
-                <div className={styles.contactos}>
-                    <p className={styles.mailContacto}>Calle 61A #24A -45</p>
-                    <p className={styles.mailContacto}>clandestinogastropub@gmail.com</p> 
-                    <p className={styles.numeroContacto}>3202086828</p>  
-                </div>
-            </article>
-
-            <article className={styles.containerRedes}>
-                <div><a href='/'><img className={styles.buhoBlanco} src='/src/assets/images/logo-04-buho.png' alt=''/></a>
-                </div>
-                <div className={styles.containerIconos}>
-                    <a href='https://www.instagram.com/clandestinogastropub/'><FontAwesomeIcon icon={faInstagram} className={styles.icon}/></a>
-                    <a href='https://open.spotify.com/playlist/6RUQXFhBCBnVnTZyXwfCBz'><FontAwesomeIcon icon={faSpotify} className={styles.icon}/></a>
-                    <a href='https://www.facebook.com/hashtag/clandestinogastropub'><FontAwesomeIcon icon={faFacebook} className={styles.icon}/></a>
-                </div>
-            </article>
-
-            <article className={styles.containerFormFooter}>
-                <div action='/' method='post' className={styles.formFooter}> 
-                    <div className={styles.containerInputs}>
-                        <h5 >Dejanos un <br/> comentario!!!</h5>
-                        <input type='text' name='nombre' id='nombre' placeholder='nombre'/>
-                        <input type='text' placeholder='nombre de usuario' name='nombre-usuario' id='nombre-usuario'/>
-                        <textarea name='mensajes'placeholder='mensaje' id='' cols='24' rows='10'></textarea>
-                        <button value='Enviar' >Enviar</button> 
+        <section className='container-fluid text-center' style={{backgroundColor:'#ffc800'}}>
+            <div className='row gx-5 justify-content-around align-items-center '>
+                <article className='col-3 p-3 mb-2'>
+                    <img className='w-100 ' src='/src/assets/images/logo-04-letra.png' alt=''/>
+                        <p >Calle 61A #24A -45</p>
+                        <p >clandestinogastropub@gmail.com</p> 
+                        <p >3202086828</p>  
+                </article>
+                <article className='col-3 p-3 mb-2'>
+                    <a href='/'><img className='w-25 mb-3' src='/src/assets/images/logo-04-buho.png' alt=''/></a>
+                    <div className='row '>
+                        <a className='col-4 text-end m-0 p-0 link-dark'  href='https://www.instagram.com/clandestinogastropub/'><FontAwesomeIcon icon={faInstagram} style={{height:25}} /></a>
+                        <a className='col-4 link-dark' href='https://open.spotify.com/playlist/6RUQXFhBCBnVnTZyXwfCBz'><FontAwesomeIcon icon={faSpotify} style={{height:25}}/></a>
+                        <a className='col-4 text-start m-0 p-0 link-dark' href='https://www.facebook.com/hashtag/clandestinogastropub'><FontAwesomeIcon icon={faFacebook} style={{height:25}}/></a>
                     </div>
-                </div>
-            </article>
+                </article>
+
+                <article className='col-3 p-3 mb-2 text-center justify-content-center '>
+                    <h5>Dejanos un <br/> comentario!!!</h5>
+                    <div className='form-floating  mb-2'>
+                        <input type='text' className='form-control' id='nombre' placeholder='Nombre'/>
+                        <label htmlFor="nombre">Nombre</label>
+                    </div>
+                    <div className='form-floating mb-2'>
+                        <input type='text' className='form-control' id='nombreUsuario' placeholder='Nombre'/>
+                        <label htmlFor="nombreUsuario">Nombre de usuario</label>
+                    </div> 
+                    <div className='form-floating mb-2'>
+                        <textarea className='form-control' placeholder="Deja un comentario" id='textArea' style={{height:'150px'}}></textarea>
+                        <label htmlFor="textArea">Deja un comentario</label>
+                    </div>    
+                    <button type='button'className='btn btn-light '>Enviar</button> 
+                </article>
+            </div>
+             <div >Copyright ©  Clandestino Gastropub. Todos los derechos reservados</div>         
         </section>
-      <div className={styles.copyright}>Copyright ©  Clandestino Gastropub. Todos los derechos reservados</div>         
     </footer>   
     
   )

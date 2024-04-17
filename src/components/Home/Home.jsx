@@ -1,12 +1,12 @@
-import React from 'react'
-import styles from '../../assets/css/Home.module.css'
-
+import React, { useContext } from 'react'
 import Header from '../Header/Header'
 import Video from './video'
 import Carrousel from '../Carousel/Carrousel'
 import Footer from '../Footer/Footer'
 
+
 const Home = () => {
+      
   const carouselItemsSlide =[
     {      
          img: <img src='/src/assets/images/slide1.png' alt="Background Cerveza"/>,
@@ -63,11 +63,9 @@ const Home = () => {
     <React.Fragment>
         <Header/>
         <Video/>
-        <div className={styles.containerNosotros}>
-             <div>
-                 <h2 className={styles.question}>Quiénes somos </h2>
-                 <p>Somos un Gastropub moderno en el corazón del eje cafetero en la vibrante ciudad de Manizales, donde combinamos la pasión por la gastronomía y la coctelería en un ambiente único. Ofrecemos cervezas artesanales de emprendimientos locales y apoyamos a los músicos de la región, permitiendo a nuestros invitados conocer artistas independientes en nuestras pantallas y disfrutar de mini conciertos. En nuestra casa también encontrarás una taza de café de la mejor calidad, procuramos apoyar a nuestros campesinos y contribuir a la sostenibilidad de nuestro entorno. Ven a Clandestino Gastropub y descubre una experiencia diferente llena de sabor, música y  conciencia social.</p>
-             </div>
+        <div className='container-fluid w-50 '> 
+          <h2 className='row-cols-1 mb-4 ' style={{color:'#ffc800',fontFamily:'Source Sans Pro'}}>Quiénes somos </h2>
+          <p className='row text-light mb-5' style={{fontFamily:'Roboto'}} >Somos un Gastropub moderno en el corazón del eje cafetero en la vibrante ciudad de Manizales, donde combinamos la pasión por la gastronomía y la coctelería en un ambiente único. Ofrecemos cervezas artesanales de emprendimientos locales y apoyamos a los músicos de la región, permitiendo a nuestros invitados conocer artistas independientes en nuestras pantallas y disfrutar de mini conciertos. En nuestra casa también encontrarás una taza de café de la mejor calidad, procuramos apoyar a nuestros campesinos y contribuir a la sostenibilidad de nuestro entorno. Ven a Clandestino Gastropub y descubre una experiencia diferente llena de sabor, música y  conciencia social.</p>
         </div>
         <Carrousel items = {1} itemsCarousel ={carouselItemsSlide}/>
         <Footer/>

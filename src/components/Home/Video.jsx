@@ -3,18 +3,17 @@ import styles from '../../assets/css/Video.module.css'
 import video from '../../assets/videos/dron.mp4'
 const Video = () => {
   return (
-    <div className={styles.containerPrincipal}>
-            <div className={styles.principal}> 
-                <div className={styles.videoBackground}>
-                    <video className={styles.videoForeground} muted autoPlay loop>
-                    <source src={video} />
-                    </video>
+    <div className='row justify-content-center align-items-center' style={{height:550}}>
+
+                <video className='col h-100' muted autoPlay loop>
+                  <source src={video} />
+                </video>
+                
+                <div className={`col ${styles.letraSlogan}`  } >         
+                    <h1 className='' style={{fontSize:80}}>clandestino</h1>
+                    <h6 className='text-light fw-bold' style={{fontSize:16}}>descubre las melodías y sabores del eje cafetero </h6>
                 </div>
-                <div className={styles.letraSlogan}>         
-                    <h1>clandestino</h1>
-                    <h6>descubre las melodías y sabores del eje cafetero </h6>
-                </div>
-            </div>           
+                     
     </div>
   )
 }
