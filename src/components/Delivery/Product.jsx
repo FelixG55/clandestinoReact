@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DetailProduct from './DetailProduct'
+import Loading from '../Loading'
 
 
 function Product({products,categories,estilo}) {

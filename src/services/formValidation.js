@@ -1,4 +1,4 @@
-export const formValidation = (formValues,action) => {
+export const formValidation = (formValues, action) => {
   const newErrors = {}; // Nuevo objeto de errores
   console.log(formValues);
   Object.keys(formValues).forEach((name) => {
@@ -78,8 +78,7 @@ export const formValidation = (formValues,action) => {
           newErrors[name] = "Debe introducir un precio";
         } else if (isNaN(value)) {
           newErrors[name] = "El precio debe ser un número";
-        }
-        else if (value < 0) {
+        } else if (value < 0) {
           newErrors[name] = "El precio debe ser positivo";
         } else {
           delete newErrors[name];
@@ -94,16 +93,14 @@ export const formValidation = (formValues,action) => {
           delete newErrors[name];
         }
         break;
-        case "category":
-          if (!value) {
-            newErrors[name] = "Debe seleccionar una categoría";
-          }
-          else if (value === "Seleccione una categoría") {
-            newErrors[name] = "Debe seleccionar una categoría";
-          }
-          else {
-            delete newErrors[name];
-          }
+      case "category":
+        if (!value) {
+          newErrors[name] = "Debe seleccionar una categoría";
+        } else if (value === "Seleccione una categoría") {
+          newErrors[name] = "Debe seleccionar una categoría";
+        } else {
+          delete newErrors[name];
+        }
       default:
         break;
     }

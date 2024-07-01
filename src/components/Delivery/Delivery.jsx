@@ -7,6 +7,8 @@ import { useProduct } from '../../hooks/useProduct'
 import { useCategory } from '../../hooks/useCategory'
 import BannerCart from '../ProductsCart/bannerCart'
 import { CartContext } from '../../context/productsCart'
+import Loading from '../Loading'
+
 
 const Delivery = () => {
 

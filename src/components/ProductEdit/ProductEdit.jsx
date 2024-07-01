@@ -3,7 +3,7 @@ import logo from "../../assets/images/imagen-register.jpg";
 import { useForm } from "react-hook-form";
 import { ProductContext } from "../../context/product";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { formValidation } from "../../services/formValidation";
 import { writeForm } from "../../services/writeForm";
 import { Navigate } from "react-router-dom";
@@ -16,6 +16,7 @@ function ProductEdit() {
   const [errors, setErrors] = useState({});
   const [action, setAction] = useState('put');
   const { categories } = useCategory();
+  const location = useLocation()
 
   useEffect(() => {
     // Set the default values using setValue
@@ -33,6 +34,13 @@ function ProductEdit() {
       setAction("post");
     }
   }, [categories, action]);
+
+  useEffect(() => {
+    if (location.state && location.state.product) {
+      console.log(1);
+      setProductE(location.state.product);
+    }
+  }, [location.state, setProductE]);
   
   const handleFormSubmit = (values) => {
     const errors = formValidation(values,action);

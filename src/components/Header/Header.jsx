@@ -23,9 +23,6 @@ const Header = () => {
     }, 1000);
   };
 
-  if (isLoading) {
-    return <Loading />;
-  } else {
     return (
       <React.Fragment>
         {/* Navvar */}
@@ -180,7 +177,6 @@ const Header = () => {
         {/* Navbar */}
       </React.Fragment>
     );
-  }
 };
 
 export default Header;
