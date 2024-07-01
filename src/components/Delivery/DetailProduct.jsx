@@ -80,6 +80,7 @@ const DetailProduct = (product) => {
           {session.logged == true && session.admin == 1 && (
             <Link
               to="/productEdit"
+              state={{product}}
               className="btn btn-warning mt-2 mb-2 m-auto"
               style={{ width: "150px",fontSize:'10px' }}
               onClick={onClickE}

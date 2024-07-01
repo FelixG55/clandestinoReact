@@ -7,7 +7,6 @@ import Menu from "./Menu/Menu";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import ProductEdit from "./ProductEdit/ProductEdit";
-import { ProductProvider } from "../context/product";
 import Cart from "./ProductsCart/Cart";
 
 function App() {
